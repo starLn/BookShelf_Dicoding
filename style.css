@@ -1,0 +1,228 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: radial-gradient(circle, rgb(136, 100, 115) 0%, rgb(120, 130, 138) 100%);
+}
+input,
+button {
+  font-family: 'Open Sans', sans-serif;
+  border: 1px solid #351d4d;
+}
+
+input,
+button {
+  font-size: 16px;
+}
+
+.head_bar {
+  border-radius: 5px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fdbb2d;
+  background: #351d4d;
+  box-shadow: 20px 20px 50px rgba(219, 214, 219, 0.6);
+}
+
+main {
+  max-width: 800px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.input_section {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.input_section > h2 {
+  text-align: center;
+  color: #351d4d;
+}
+
+.input_section > form > .input {
+  margin: 8px 0;
+}
+
+.input_section > form > button {
+  background-color: #351d4d;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.input_section > form > button > span {
+  font-weight: bold;
+}
+
+.input_section > form > .input > input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.input_section > form > .input > label {
+  color: #351d4d;
+  font-weight: bold;
+}
+
+.input_section > form > .input_inline {
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+}
+
+.input_section > form > .input_inline > label {
+  color: #351d4d;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.search_section {
+  margin: 7px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px;
+  border: 1px solid #fdbb2d;
+  border-radius: 10px;
+}
+
+.search_section > h2 {
+  color: #351d4d;
+}
+
+.search_section > form {
+  padding: 6px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr 0.5fr;
+  grid-gap: 10px;
+}
+
+.search_section > form > label {
+  display: flex;
+  align-items: center;
+  color: #351d4d;
+  font-weight: bold;
+}
+
+.search_section > form > input {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.search_section > form > button {
+  background-color: #351d4d;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.book_shelf {
+  margin: 16px 0 0 0;
+  padding: 16px;
+  border-radius: 10px;
+  background-color: rgba(254, 254, 254, 0.3);
+  box-shadow: 10px 20px 10px rgba(133, 129, 129, 0.5);
+}
+
+.book_shelf > h2 {
+  color: #fdbb2d;
+  background: #351d4d;
+  padding: 8px 16px 16px 20px;
+  border-radius: 10px;
+}
+
+.book_shelf > .book_list {
+  padding: 16px;
+}
+
+.book_shelf > .book_list > .book_item {
+  padding: 8px 16px 16px 16px;
+  border: 5px solid gray;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.book_shelf > .book_list > .book_item > h3,
+p {
+  margin: 8px 0;
+}
+
+.book_shelf > .book_list > .book_item > .action > button {
+  border: 0;
+  padding: 5px;
+  margin: 0 5px 0 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.book_shelf > .book_list > .book_item > .action > .green {
+  background-color: darkgreen;
+  color: white;
+}
+
+.book_shelf > .book_list > .book_item > .action > .red {
+  background-color: darkred;
+  color: white;
+}
+.check-button {
+  background: url('./asset/cek.svg');
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+}
+.check-button:hover {
+  background: url('./asset/cek-hover.svg');
+  background-size: contain;
+}
+.trash-button {
+  background: url('./asset/delete.svg');
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  margin-top: 10px;
+  cursor: pointer;
+  border: none;
+}
+.trash-button:hover {
+  background: url('./asset/delete_hover.svg');
+  background-size: contain;
+}
+.undo-button {
+  background: url('./asset/update.svg');
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  border: none;
+}
+.undo-button:hover {
+  background: url('./asset/update-hover.svg');
+  background-size: contain;
+}
+.check-button:focus,
+.trash-button {
+  outline: none;
+}
